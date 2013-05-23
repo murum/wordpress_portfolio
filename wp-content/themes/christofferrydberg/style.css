@@ -1,0 +1,310 @@
+/*
+Theme Name: Christoffer Rydberg
+Author: Christoffer Rydberg
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+	clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+	display: table;
+	content: "";
+}
+
+/* = BASICS 
+====================== */
+
+body {
+	font: 16px/140% 'Lato', sans-serif;
+	color: #333;
+}
+
+/* = LAYOUTING
+====================== */
+
+.cr-header {
+	min-width: 100%;
+	height: 140px;
+	background: #333;
+}
+
+.cr-splash {
+	padding: 50px 0;
+	min-width: 100%;
+	background: #ffae1a;
+}
+
+.cr-footer {
+	border-top: 1px solid #eee;
+	margin: 0 0 1em;
+	padding-top: 0.6em;
+}
+
+.cr-content {
+	margin: 40px auto;
+}
+
+/* = Typography
+====================== */
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 1em;
+}
+
+h1,h2,h3,h4, p {
+	line-height: 140%;
+	color: #333
+}
+
+/* = HEADER
+====================== */
+
+hgroup {
+	width: 960px;
+	margin: auto;
+}
+
+hgroup h1 {
+	padding-top: 25px;
+}
+
+hgroup h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+hgroup h2 {
+	color: #fff;
+}
+
+/* = SPLASH
+====================== */
+
+.brand {
+	font-size: 1.5em;
+}
+
+.brand a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 2px solid #333;
+}
+
+.brand a:hover {
+	border-bottom: none;
+}
+
+.brand a.cr-splash-button {
+	height: 80px;
+	line-height: 69px;
+	margin: 10px 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #eee;
+}
+
+.cr-profile-picture {
+	border: 3px solid #333;
+
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+
+
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.cr-profile-picture:hover {
+	-moz-transform: rotate(362deg);
+	-webkit-transform: rotate(362deg);
+	transform: rotate(362deg);
+}
+
+/* = Content
+====================== */
+.cr-content-header {
+	padding: 0.6em 0;
+	border-bottom: 1px solid #eee;
+}
+
+.cr-project-types {
+	margin: 0;
+}
+
+.cr-project-type {
+	line-height: 30px;
+	display: inline;
+	text-align: center;
+}
+
+.cr-project-link {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.cr-project {
+	padding: 1em;
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	cursor: pointer;
+}
+
+.cr-project:hover {
+	box-shadow: 0 0 1em rgba(0,0,0,.1);
+	border-color: #ddd;
+}
+
+.cr-project-types-list,
+.cr-project-techniques {
+	margin-top: 4px;
+}
+
+.cr-project-technique,
+.cr-project-list-type {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0 4px 0 0;
+	padding: 5px;
+}
+
+
