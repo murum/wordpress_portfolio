@@ -199,6 +199,17 @@ hgroup h1 {
 hgroup h1 a {
 	color: #fff;
 	text-decoration: none;
+
+	-webkit-transition: color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in;
+	-ms-transition: color 0.2s ease-in;
+	transition: color 0.2s ease-in;
+}
+
+hgroup h1 a:hover {
+	color: #ffae1a;
+	text-decoration: none;
 }
 
 hgroup h2 {
