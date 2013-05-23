@@ -1,93 +1,84 @@
 /*
-Theme Name: Christoffer Rydberg
-Author: Christoffer Rydberg
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
+Theme Name:   Christoffer Rydberg
+Author:   Christoffer Rydberg
+Version:   1.0
+License:   GNU General Public License v2 or later
+License URI:   http://www.gnu.org/licenses/gpl-2.0.html
+ */
 /* =Reset
--------------------------------------------------------------- */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+--------------------------------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 body {
 	line-height: 1;
 }
-ol,
-ul {
+
+ol,ul {
 	list-style: none;
 }
-blockquote,
-q {
+
+blockquote,q {
 	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote:before,blockquote:after,q:before,q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-caption,
-th,
-td {
+
+caption,th,td {
 	font-weight: normal;
 	text-align: left;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1,h2,h3,h4,h5,h6 {
 	clear: both;
 }
+
 html {
+	-ms-overflow-y: scroll;
 	overflow-y: scroll;
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
+
 a:focus {
 	outline: thin dotted;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
 	display: block;
 }
-audio,
-canvas,
-video {
+
+audio,canvas,video {
 	display: inline-block;
 }
+
 audio:not([controls]) {
 	display: none;
 }
+
 del {
 	color: #333;
 }
+
 ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -95,46 +86,43 @@ hr {
 	margin: 24px;
 	margin-bottom: 1.714285714rem;
 }
-sub,
-sup {
+
+sub,sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
 }
+
 sup {
 	top: -0.5em;
 }
+
 sub {
 	bottom: -0.25em;
 }
+
 small {
 	font-size: smaller;
 }
+
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 }
 
 /* Clearing floats */
-.clear:after,
-.wrapper:after,
-.format-status .entry-header:after {
+.clear:after,.wrapper:after,.format-status .entry-header:after {
 	clear: both;
 }
-.clear:before,
-.clear:after,
-.wrapper:before,
-.wrapper:after,
-.format-status .entry-header:before,
-.format-status .entry-header:after {
+
+.clear:before,.clear:after,.wrapper:before,.wrapper:after,.format-status .entry-header:before,.format-status .entry-header:after {
 	display: table;
 	content: "";
 }
 
-/* = BASICS 
+/* = BASICS
 ====================== */
-
 body {
 	font: 16px/140% 'Lato', sans-serif;
 	color: #333;
@@ -142,11 +130,16 @@ body {
 
 /* = LAYOUTING
 ====================== */
-
 .cr-header {
 	min-width: 100%;
 	height: 140px;
 	background: #333;
+}
+
+.cr-project-navigation-background {
+	padding: 30px 0;
+	min-width: 100%;
+	background: #fff;
 }
 
 .cr-splash {
@@ -167,7 +160,6 @@ body {
 
 /* = Typography
 ====================== */
-
 h1 {
 	font-size: 2em;
 }
@@ -188,14 +180,13 @@ p {
 	font-size: 1em;
 }
 
-h1,h2,h3,h4, p {
+h1,h2,h3,h4,p {
 	line-height: 140%;
-	color: #333
+	color: #333;
 }
 
 /* = HEADER
 ====================== */
-
 hgroup {
 	width: 960px;
 	margin: auto;
@@ -216,13 +207,17 @@ hgroup h2 {
 
 .cr-social-icons {
 	line-height: 170px;
-	text-align: right; 
+	text-align: right;
 }
 
 .cr-social-icons a {
 	margin: 0 40px 0 0;
 	color: #fff;
 
+	-webkit-transition: color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in;
+	-ms-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -231,18 +226,13 @@ hgroup h2 {
 	text-decoration: none;
 }
 
-.cr-social-icon {
-}
-
 /* = SPLASH
 ====================== */
-
 .brand {
 	font-size: 1.5em;
 }
 
-.brand h1,
-.brand h2 {
+.brand h1,.brand h2 {
 	color: #000;
 }
 
@@ -269,19 +259,24 @@ hgroup h2 {
 .cr-profile-picture {
 	border: 3px solid #333;
 
-	-moz-transform: rotate(2deg);
 	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
 	transform: rotate(2deg);
 
-
-	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
 	transition: all 1s;
 }
 
 .cr-profile-picture:hover {
-	-moz-transform: rotate(362deg);
 	-webkit-transform: rotate(362deg);
+	-moz-transform: rotate(362deg);
+	-o-transform: rotate(362deg);
+	-ms-transform: rotate(362deg);
 	transform: rotate(362deg);
 }
 
@@ -315,21 +310,93 @@ hgroup h2 {
 }
 
 .cr-project:hover {
+	-webkit-box-shadow: 0 0 1em rgba(0,0,0,.1);
 	box-shadow: 0 0 1em rgba(0,0,0,.1);
 	border-color: #ddd;
 }
 
-.cr-project-types-list,
-.cr-project-techniques {
+.cr-project-types-list,.cr-project-techniques {
 	margin-top: 4px;
 }
 
-.cr-project-technique,
-.cr-project-list-type {
+.cr-project-technique,.cr-project-list-type {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin: 0 4px 0 0;
 	padding: 5px;
 }
 
+/* = Single View
+====================== */
 
+.cr-project-navigation {
+	position: relative;
+}
+
+.cr-project-previous,.cr-project-next {
+	display: block;
+	margin: 0 10px;
+}
+
+.cr-project-next-text,
+.cr-project-previous-text {
+	position: absolute;
+	margin-top: -20px;
+	font-size: 1.3em;
+	top: 33px;
+}
+
+.cr-project-next-text {
+	right: 60px;
+}
+
+.cr-project-previous-text {
+	left: 60px;
+}
+
+.cr-project-navigation a {
+	color: #000;
+
+	-webkit-transition: color 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in;
+	-o-transition: color 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in;
+	transition: color 0.1s ease-in;
+}
+
+.cr-project-navigation a:hover {
+	color: #0099b4;
+	text-decoration: none;
+}
+
+.cr-project-title {
+	text-align: center;
+	font-size: 3em;
+	margin-top: -80px;
+}
+
+.cr-project-information {
+	margin: 30px 0;
+}
+
+.cr-project-content {
+	border-right: 1px solid #eee;
+}
+
+/* = HELPERS
+====================== */
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

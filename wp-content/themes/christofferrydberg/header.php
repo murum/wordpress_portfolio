@@ -42,18 +42,3 @@
 			</div>
 		</hgroup>
 	</div>
-	<div class="cr-splash">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="span8 brand">
-					<h1>Webbutvecklare med en förkärlek till agila utvecklingsmetoder</h1>
-					<div class="row-fluid">
-						<h2 class="span8">PS. Jag gillar mail i inkorgen <a href="mailto:christoffer@rydberg.me">christoffer@rydberg.me</a></h2>
-						<a href="#" class="btn btn-inverse span4 cr-splash-button">Mitt CV</a>
-					</div>
-				</div>
-				<img class="span4 cr-profile-picture" src="<?php echo get_template_directory_uri(); ?>/img/me.jpg" alt="Christoffer Rydberg Bild på mig" >
-			</div>
-		</div>
-	</div>
-	<div class="container cr-content">
