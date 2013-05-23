@@ -17,6 +17,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
@@ -29,8 +30,15 @@
 	<div class="cr-header">
 		<hgroup class="container">
 			<div class="row-fluid">
-				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2><?php bloginfo( 'description' ); ?></h2>
+				<div class="span8">
+					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2><?php bloginfo( 'description' ); ?></h2>
+				</div>
+				<div class="span4 cr-social-icons">
+					<a href="http://www.facebook.com/GrisnasaAB"><span class="cr-social-icon icon-facebook-sign icon-4x"></span></a>
+					<a href="https://twitter.com/eukaryoter"><span class="cr-social-icon icon-twitter-sign icon-4x"></span></a>
+					<a href="https://github.com/murum"><span class="cr-social-icon icon-github-sign icon-4x"></span></a>
+				</div>
 			</div>
 		</hgroup>
 	</div>

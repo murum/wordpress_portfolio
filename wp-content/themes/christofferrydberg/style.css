@@ -214,6 +214,26 @@ hgroup h2 {
 	color: #fff;
 }
 
+.cr-social-icons {
+	line-height: 170px;
+	text-align: right; 
+}
+
+.cr-social-icons a {
+	margin: 0 40px 0 0;
+	color: #fff;
+
+	transition: color 0.2s ease-in;
+}
+
+.cr-social-icons a:hover {
+	color: #ffae1a;
+	text-decoration: none;
+}
+
+.cr-social-icon {
+}
+
 /* = SPLASH
 ====================== */
 
@@ -221,10 +241,15 @@ hgroup h2 {
 	font-size: 1.5em;
 }
 
+.brand h1,
+.brand h2 {
+	color: #000;
+}
+
 .brand a {
-	color: #333;
+	color: #000;
 	text-decoration: none;
-	border-bottom: 2px solid #333;
+	border-bottom: 2px solid #000;
 }
 
 .brand a:hover {
