@@ -5,6 +5,37 @@ Version:   1.0
 License:   GNU General Public License v2 or later
 License URI:   http://www.gnu.org/licenses/gpl-2.0.html
  */
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('font/aleo-regular.eot');
+    src: url('font/aleo-regular.eot') format('embedded-opentype'),
+         url('font/aleo-regular.woff') format('woff'),
+         url('font/aleo-regular.ttf') format('truetype'),
+         url('font/aleo-regular.svg#AleoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'Aleo Light';
+    src: url('font/aleo-lightitalic.eot');
+    src: url('font/aleo-lightitalic.eot') format('embedded-opentype'),
+         url('font/aleo-lightitalic.woff') format('woff'),
+         url('font/aleo-lightitalic.ttf') format('truetype'),
+         url('font/aleo-lightitalic.svg#AleoLightItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'Aleo Bold';
+    src: url('font/aleo-bolditalic.eot');
+    src: url('font/aleo-bolditalic.eot') format('embedded-opentype'),
+         url('font/aleo-bolditalic.woff') format('woff'),
+         url('font/aleo-bolditalic.ttf') format('truetype'),
+         url('font/aleo-bolditalic.svg#AleoBoldItalic') format('svg');
+}
+
+
+
+
 /* =Reset
 --------------------------------------------------------------*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -124,7 +155,7 @@ img {
 /* = BASICS
 ====================== */
 body {
-	font: 16px/140% 'Lato', sans-serif;
+	font: 16px/140% 'Aleo', sans-serif;
 	color: #333;
 }
 
@@ -180,7 +211,14 @@ p {
 	font-size: 1em;
 }
 
-h1,h2,h3,h4,p {
+h1,h2,h3,h4 {
+	font-family: 'Aleo Bold', sans-serif;
+	font-weight: normal;
+	line-height: 140%;
+	color: #333;
+}
+
+p {
 	line-height: 140%;
 	color: #333;
 }
@@ -199,21 +237,28 @@ hgroup h1 {
 hgroup h1 a {
 	color: #fff;
 	text-decoration: none;
+	padding-bottom: 8px;
 
-	-webkit-transition: color 0.2s ease-in;
-	-moz-transition: color 0.2s ease-in;
-	-o-transition: color 0.2s ease-in;
-	-ms-transition: color 0.2s ease-in;
-	transition: color 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+
+	border-bottom: 3px double #fff;
 }
 
 hgroup h1 a:hover {
 	color: #ffae1a;
+	border-color: #ffae1a;
 	text-decoration: none;
 }
 
 hgroup h2 {
+	padding-top: 13px;
+	font-family: 'Aleo Light', sans-serif;
 	color: #fff;
+	font-size: 1.4em;
 }
 
 .cr-social-icons {
@@ -243,14 +288,19 @@ hgroup h2 {
 	font-size: 1.5em;
 }
 
-.brand h1,.brand h2 {
+.brand h1, .brand h2 {
 	color: #000;
+}
+
+.brand h2 {
+	font-family: 'Aleo Light', sans-serif;
 }
 
 .brand a {
 	color: #000;
 	text-decoration: none;
-	border-bottom: 2px solid #000;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
 }
 
 .brand a:hover {
@@ -276,19 +326,19 @@ hgroup h2 {
 	-ms-transform: rotate(2deg);
 	transform: rotate(2deg);
 
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	transition: all 1s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .cr-profile-picture:hover {
-	-webkit-transform: rotate(362deg);
-	-moz-transform: rotate(362deg);
-	-o-transform: rotate(362deg);
-	-ms-transform: rotate(362deg);
-	transform: rotate(362deg);
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
 }
 
 /* = Content
@@ -351,6 +401,7 @@ hgroup h2 {
 
 .cr-project-next-text,
 .cr-project-previous-text {
+	font-family: 'Aleo Bold', sans-serif;
 	position: absolute;
 	margin-top: -20px;
 	font-size: 1.3em;
@@ -376,7 +427,7 @@ hgroup h2 {
 }
 
 .cr-project-navigation a:hover {
-	color: #0099b4;
+	color: #ffae1a;
 	text-decoration: none;
 }
 
@@ -386,12 +437,68 @@ hgroup h2 {
 	margin-top: -80px;
 }
 
+.main-slider {
+  	overflow: hidden;
+  	height: 700px;
+}
+  .main-slider > ul {
+    /* styled by JS to match the added width and height of all <li>’s */
+    position: relative;
+    -webkit-transition: 0.5s left;
+    -moz-transition: 0.5s left;
+    -ms-transition: 0.5s left;
+    -o-transition: 0.5s left;
+ 
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+    .main-slider > ul > li {
+      float: left;
+    }
+
+    .main-slider > ul > li > img {
+    	min-width: 100% !important;
+    }
+
+    .main-slider-next,
+    .main-slider-prev {
+    	z-index: 1000;
+    }
+    .main-slider-container {
+    	position: relative;
+    }
+
+    .main-slider-next {
+    	position: absolute;
+    	top: 300px;
+    	right: -70px;
+    }
+
+    .main-slider-prev {
+    	position: absolute;
+    	top: 300px;
+    	left: -70px;
+    }
+
 .cr-project-information {
 	margin: 30px 0;
 }
 
 .cr-project-content {
 	border-right: 1px solid #eee;
+	padding-right: 20px;
+}
+
+.cr-project-content p,
+.cr-project-content ul {
+	margin: 0 0 12px 0;
+	line-height: 1.431em;
+}
+
+.cr-project-content li {
+	line-height: 1.431em;
+	list-style: disc;
+	margin-left: 20px;
 }
 
 /* = HELPERS

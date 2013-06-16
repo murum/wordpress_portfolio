@@ -32,7 +32,19 @@
 				<h2 class="offset2 span8 cr-project-title"><?php the_title(); ?></h2>
 			</div>
 			<div class="row-fluid">
-				<div class="offset1 span10"><?php the_post_thumbnail('full'); ?></div>
+				<div class="offset1 span10 main-slider-container">
+					<span class="icon-chevron-sign-left icon-4x main-slider-prev"></span>
+					<div class="main-slider">
+						<ul>
+							<?php $images = simple_fields_fieldgroup("project_images"); ?>
+							<?php foreach ($images as $image) : ?>
+								<?php $thumbnail = wp_get_attachment_image($image, 'single-image')?>
+								<li><?php echo $thumbnail; ?></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+					<span class="icon-chevron-sign-right icon-4x main-slider-next"></span>
+				</div>
 			</div>
 			<div class="row-fluid cr-project-information">
 				<div class="offset2 span6 cr-project-content">

@@ -14,7 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-responsive.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
 			<div class="row-fluid">
 				<div class="span8">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2><?php bloginfo( 'description' ); ?></h2>
+					<h2 class="slogan"><?php bloginfo( 'description' ); ?></h2>
 				</div>
 				<div class="span4 cr-social-icons">
 					<a href="http://www.facebook.com/GrisnasaAB"><span class="cr-social-icon icon-facebook-sign icon-4x"></span></a>
